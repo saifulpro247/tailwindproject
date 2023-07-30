@@ -119,45 +119,97 @@
                                         <input type=hidden name=type value="project">
                                         <div class="space-y-5 registration-form text-dark text-start">
                                             <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-0">
-                                                <div><label for="keyword-projects" class="font-medium form-label text-slate-900 dark:text-white">Keyword:</label>
-                                                    <div class="relative mt-2 filter-search-form filter-border"><i class="mdi mdi-magnify icons"></i><input name=k type=text id="keyword-projects" class="border-0 form-input filter-input-box bg-gray-50 dark:bg-slate-800" autocomplete="off" placeholder="Search your keyword" value=""><i class="absolute hidden mdi mdi-loading mdi-spin top-5 end-5"></i>
+                                                <div>
+                                                    <label for="keyword-projects" class="font-medium form-label text-slate-900 dark:text-white">Keyword:</label>
+                                                    <div class="relative mt-2 filter-search-form filter-border">
+                                                        <i class="mdi mdi-magnify icons"></i>
+                                                        <input name=k type=text id="keyword-projects" class="border-0 form-input filter-input-box bg-gray-50 dark:bg-slate-800" autocomplete="off" placeholder="Search your keyword" value=""><i class="absolute hidden mdi mdi-loading mdi-spin top-5 end-5"></i>
                                                     </div>
                                                 </div>
-                                                <div><label for="location-projects" class="font-medium form-label text-slate-900 dark:text-white">Location:</label>
-                                                    <div class="relative mt-2 filter-search-form filter-border"><i class="mdi mdi-map-marker-outline icons"></i><input name=location type=text id="location-projects" class="border-0 form-input filter-input-box bg-gray-50 dark:bg-slate-800" placeholder="City, state" autocomplete="off" data-url="ajax/cities.html"><i class="absolute hidden mdi mdi-loading mdi-spin top-5 end-5"></i>
+                                                <div>
+                                                    <label for="location-projects" class="font-medium form-label text-slate-900 dark:text-white">Location:</label>
+                                                    <div class="relative mt-2 filter-search-form filter-border"><i class="mdi mdi-map-marker-outline icons"></i>
+                                                        <input name=location type=text id="location-projects" class="border-0 form-input filter-input-box bg-gray-50 dark:bg-slate-800" placeholder="City, state" autocomplete="off" data-url="ajax/cities.html">
+                                                        <i class="absolute hidden mdi mdi-loading mdi-spin top-5 end-5"></i>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button type=button class="flex items-center gap-2 toggle-advanced-search text-secondary hover:text-primary"> Advanced <i class="mdi mdi-chevron-down-circle-outline"></i>
+                                            <button type=button class="flex items-center gap-2 toggle-advanced-search text-secondary hover:text-primary">Technical Details <i class="mdi mdi-chevron-down-circle-outline"></i>
                                             </button>
+
                                             <div class="grid hidden grid-cols-1 gap-6 transition-all duration-200 ease-in-out lg:grid-cols-3 md:grid-cols-2 lg:gap-0 advanced-search">
+                                                
                                                 <div>
-                                                    <label for="choices-category-projects" class="font-medium form-label text-slate-900 dark:text-white">Select Category:</label>
-                                                    <div class="relative mt-2 filter-search-form filter-border"><i class="mdi mdi-home-outline icons"></i>
+                                                    <label for="choices-category-projects" class="font-medium form-label text-slate-900 dark:text-white">Electric Counters:</label>
+                                                    
+                                                    <div class="relative mt-2 filter-search-form filter-border">
+                                                        <i class="mdi mdi-home-outline icons"></i>
                                                         <select class="form-select z-2" data-trigger name=category_id id="choices-category-projects" aria-label="Category">
-                                                            <option value="">All Category</option>
-                                                            <option value="2">Villa</option>
-                                                            <option value="3">Condo</option>
-                                                            <option value="1">Apartment</option>
-                                                            <option value="4">House</option>
-                                                            <option value="5">Land</option>
-                                                            <option value="6">Commercial property</option>
+                                                            <option value="">Yes</option>
+                                                            <option value="2">No</option>
                                                         </select>
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <label for="min-price" class="font-medium form-label text-slate-900 dark:text-white">Min Price:</label>
-                                                    <div class="relative mt-2 filter-search-form filter-border"><i class="mdi mdi-currency-usd icons"></i>
-                                                    <input name=min_price type=number id="min-price" class="border-0 form-input filter-input-box bg-gray-50 dark:bg-slate-800" placeholder="Min price">
-                                                </div>
+                                                    <label for="choices-category-projects" class="font-medium form-label text-slate-900 dark:text-white">Sind Counters:</label>
+                                                    
+                                                    <div class="relative mt-2 filter-search-form filter-border">
+                                                        <i class="mdi mdi-home-outline icons"></i>
+                                                        <select class="form-select z-2" data-trigger name=category_id id="choices-category-projects" aria-label="Category">
+                                                            <option value="">Yes</option>
+                                                            <option value="2">No</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                                 <div>
-                                                    <label for="max-price" class="font-medium form-label text-slate-900 dark:text-white">Max Price:</label>
-                                                    <div class="relative mt-2 filter-search-form filter-border"><i class="mdi mdi-currency-usd icons"></i>
-                                                    <input name=max_price type=number id="max-price" class="border-0 form-input filter-input-box bg-gray-50 dark:bg-slate-800" placeholder="Max price"></div>
+                                                    <label for="choices-category-projects" class="font-medium form-label text-slate-900 dark:text-white">Water Counters:</label>
+                                                    
+                                                    <div class="relative mt-2 filter-search-form filter-border">
+                                                        <i class="mdi mdi-home-outline icons"></i>
+                                                        <select class="form-select z-2" data-trigger name=category_id id="choices-category-projects" aria-label="Category">
+                                                            <option value="">Yes</option>
+                                                            <option value="2">No</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
+
+                                            <div class="grid hidden grid-cols-1 gap-6 transition-all duration-200 ease-in-out lg:grid-cols-3 md:grid-cols-2 lg:gap-0 advanced-search">
+                                                
+                                                <div>
+                                                    <label for="choices-category-projects" class="font-medium form-label text-slate-900 dark:text-white">Possible batch Creation:</label>
+                                                    
+                                                    <div class="relative mt-2 filter-search-form filter-border">
+                                                        <i class="mdi mdi-home-outline icons"></i>
+                                                        <select class="form-select z-2" data-trigger name=category_id id="choices-category-projects" aria-label="Category">
+                                                            <option value="">Yes</option>
+                                                            <option value="2">No</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <label for="choices-category-projects" class="font-medium form-label text-slate-900 dark:text-white">Estimate Time of works</label>
+                                                    
+                                                    <div class="relative mt-2 filter-search-form filter-border">
+                                                        <i class="mdi mdi-home-outline icons"></i>
+                                                        <input name=estimet_work type=number id="min-price" class="border-0 form-input filter-input-box bg-gray-50 dark:bg-slate-800" placeholder="Estimate Work">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <label for="choices-category-projects" class="font-medium form-label text-slate-900 dark:text-white">Diag Santisation Conform:</label>
+                                                    
+                                                    <div class="relative mt-2 filter-search-form filter-border">
+                                                        <i class="mdi mdi-home-outline icons"></i>
+                                                        <select class="form-select z-2" data-trigger name=category_id id="choices-category-projects" aria-label="Category">
+                                                            <option value="">Yes</option>
+                                                            <option value="2">No</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                             <button type=submit class="btn bg-primary hover:bg-secondary border-primary hover:border-secondary text-white submit-btn w-full md:w-1/4 !h-12 rounded transition-all ease-in-out duration-200"><i class="mdi mdi-magnify me-2"></i> Search </button>
+
                                         </div>
                                     </form>
                                 </div>
