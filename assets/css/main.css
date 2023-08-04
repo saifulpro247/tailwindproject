@@ -307,8 +307,8 @@ video {
   --tw-backdrop-sepia: ;
 }
 :root {
-    --primary-color: 22 163 74;
-    --secondary-color: #15803D;
+    --primary-color: 220 20 60;
+    --secondary-color: #00008B;
     --primary-font: 'League Spartan', sans-serif;
     --primary-color-rgb: rgba(22, 163, 74, 0.8);
 }
