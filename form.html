@@ -93,8 +93,8 @@
     <!-- component -->
     <!-- This is an example component -->
     <div class="container mt-24">
+       
         <div class="max-w-2xl mx-auto bg-gray-700 p-16">
-
             <form>
                 <div class="flex flex-row space-x-2 justify-stretch bg-white p-2">
                     <div class="border border-solid flex gap-2 capitalize font-medium text-black rounded-md ring-blue-400 p-1 ring-1 basis-1/4">
@@ -198,19 +198,651 @@
                         <label for="diviser" class="text-black text-sm font-medium cursor-pointer">G</label>
                     </div>
                 </div>
+                <div class="flex justify-end">
+                    <button type="submit" class="text-white bg-primary hover:bg-secondary focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-52">Go</button>
+                    <button class="more-option underline text-white px-5 py-2 text-decoration-underline rounded-lg text-sm ">+ Add More Options</button>
+                </div>
+            </form>
+        </div>
+       <!-- form one end -->
 
-                <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-52">Go</button>
+        <!-- form two start -->
+        <div class="max-w-2xl mx-auto bg-gray-700 p-16 mt-4">
+            <form>
+                <!-- checkboxes -->
+                <div class="flex flex-row space-x-2 justify-stretch bg-white p-2">
+                    <div class="border border-solid flex gap-2 capitalize font-medium text-black rounded-md ring-blue-400 p-1 ring-1 basis-1/4">
+                        <input type="checkbox" name="checkbox" id="residential" class="cursor-pointer">
+                        <label for="residential" class="text-black text-sm font-medium cursor-pointer">residential</label>
+                    </div>
+                    <div class="border border-solid flex gap-2 capitalize font-medium text-black p-1 rounded-md ring-blue-400 ring-1 basis-1/4">
+                        <input type="checkbox" name="checkbox" id="Mixte" class="cursor-pointer">
+                        <label for="Mixte" class="text-black text-sm font-medium cursor-pointer">Mixte</label>
+                    </div>
+                    <div class="border border-solid flex gap-2 capitalize font-medium text-black p-1 rounded-md ring-blue-400 ring-1 basis-1/4">
+                        <input type="checkbox" name="checkbox" id="Pro" class="cursor-pointer">
+                        <label for="Pro" class="text-black text-sm font-medium cursor-pointer">Pro</label>
+                    </div>
+                    <div class="border border-solid flex gap-2 capitalize font-medium text-black p-1 rounded-md ring-blue-400 ring-1 basis-1/4">
+                        <input type="checkbox" name="checkbox" id="diviser" class="cursor-pointer">
+                        <label for="diviser" class="text-black text-sm font-medium cursor-pointer">Bien a Diviser</label>
+                    </div>
+                </div>
+                <!-- checkboxes end -->
+
+                <div class="mb-6 mt-6">
+                    <input type="text" id="loction"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Localisation" required>
+                </div>
+                <div class="mb-6 flex gap-6 sm:flex-col">
+                    <input 
+                        type="text" 
+                        id="prixmin"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Prix Min" 
+                    required>
+                    <input 
+                        type="text" 
+                        id="prixmax"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Prix Max" 
+                    required>
+                </div>
+                <div class="mb-6 gap-6 flex sm:flex-col ">
+                    <input type="text" id="Rendement brut min"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Rendement burt Min" required>
+                    <input type="text" id=""
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Nbre Lots Min" required>
+
+                </div>
+
+                <div class="flex flex-row space-x-2 justify-stretch bg-white p-2 mb-6">
+                    <div class=" flex gap-2 capitalize font-medium text-black p-2 rounded-md  basis-1/4">
+                        <img class="h-6 w-6" src="assets/images/repair.png" alt="">
+                    </div>
+                    <div class=" flex gap-2 capitalize font-medium text-black p-2 rounded-md  basis-1/4">
+                        <input type="checkbox" name="checkbox" id="Mixte" class="cursor-pointer">
+                        <label for="Mixte" class="text-black text-sm font-medium cursor-pointer">Mixte</label>
+                    </div>
+                    <div class=" flex gap-2 capitalize font-medium text-black p-2 rounded-md  basis-1/4">
+                        <input type="checkbox" name="checkbox" id="Pro" class="cursor-pointer">
+                        <label for="Pro" class="text-black text-sm font-medium cursor-pointer">Pro</label>
+                    </div>
+                    <div class=" flex gap-2 capitalize font-medium text-black p-2 rounded-md  basis-1/4">
+                        <input type="checkbox" name="checkbox" id="diviser" class="cursor-pointer">
+                        <label for="diviser" class="text-black text-sm font-medium cursor-pointer">Bien a Diviser</label>
+                    </div>
+                </div>
+                <div class="flex flex-row space-x-2 justify-stretch bg-white p-2 mb-6">
+                    <div class=" flex gap-2 capitalize font-medium text-black p-2 rounded-md  basis-1/4">
+                        <img class="h-6 w-6" src="assets/images/repair.png" alt="">
+                    </div>
+                    <div class=" flex gap-2 capitalize font-medium text-black p-2 rounded-md  basis-1/4">
+                        <input type="checkbox" name="checkbox" id="Mixte" class="cursor-pointer">
+                        <label for="Mixte" class="text-black text-sm font-medium cursor-pointer">Mixte</label>
+                    </div>
+                    <div class=" flex gap-2 capitalize font-medium text-black p-2 rounded-md  basis-1/4">
+                        <input type="checkbox" name="checkbox" id="Pro" class="cursor-pointer">
+                        <label for="Pro" class="text-black text-sm font-medium cursor-pointer">Pro</label>
+                    </div>
+                    <div class=" flex gap-2 capitalize font-medium text-black p-2 rounded-md  basis-1/4">
+                        <input type="checkbox" name="checkbox" id="diviser" class="cursor-pointer">
+                        <label for="diviser" class="text-black text-sm font-medium cursor-pointer">Bien a Diviser</label>
+                    </div>
+                </div>
+
+                <div class="flex flex-row space-x-2 justify-stretch bg-white p-2 mb-6">
+                    <div class=" flex gap-2 capitalize font-medium text-black p-2 rounded-md  basis-1/4">
+                        <h3 class="font-bold text-black text-sm">DPE</h3>
+                    </div>
+                    <div class=" flex gap-2 capitalize font-medium text-black p-2 rounded-md  basis-1/4">
+                        <input type="checkbox" name="checkbox" id="a-b-c" class="cursor-pointer">
+                        <label for="Mixte" class="text-black text-sm font-medium cursor-pointer">A-B-C</label>
+                    </div>
+                    <div class=" flex gap-2 capitalize font-medium text-black p-2 rounded-md  basis-1/4">
+                        <input type="checkbox" name="checkbox" id="d" class="cursor-pointer">
+                        <label for="Pro" class="text-black text-sm font-medium cursor-pointer">D</label>
+                    </div>
+                    <div class=" flex gap-2 capitalize font-medium text-black p-2 rounded-md  basis-1/4">
+                        <input type="checkbox" name="checkbox" id="e" class="cursor-pointer">
+                        <label for="diviser" class="text-black text-sm font-medium cursor-pointer">E</label>
+                    </div>
+                    <div class=" flex gap-2 capitalize font-medium text-black p-2 rounded-md  basis-1/4">
+                        <input type="checkbox" name="checkbox" id="f" class="cursor-pointer">
+                        <label for="Pro" class="text-black text-sm font-medium cursor-pointer">F</label>
+                    </div>
+                    <div class=" flex gap-2 capitalize font-medium text-black p-2 rounded-md  basis-1/4">
+                        <input type="checkbox" name="checkbox" id="g" class="cursor-pointer">
+                        <label for="diviser" class="text-black text-sm font-medium cursor-pointer">G</label>
+                    </div>
+                </div>
+                <div class="flex justify-end">
+                    <button type="submit" class="text-white bg-primary hover:bg-secondary focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-52">Go</button>
+                    <button class="more-option underline text-white px-5 py-2 text-decoration-underline rounded-lg text-sm ">+ Add More Options</button>
+                </div>
+            </form>
+        </div>
+        <!-- form two end -->
+
+        <!-- form three start -->
+        <div class="max-w-2xl mx-auto bg-gray-700 p-16 mt-10">
+            <h5 class="text-2xl font-medium text-white text-center mb-6">Plan</h5>
+            <form>
+                <div class="flex justify-center gap-8 mb-6">
+                    <div class="checkbox flex gap-1 ">
+                        <input type="radio" id="sole" name="fav_language" value="CSS">
+                         <label for="sole" class="cursor-pointer">Sole Propietorship </label>
+                    </div>
+                    <div class="checkbox flex gap-1  ">
+                        <input type="radio" id="owner" name="fav_language" value="JavaScript">
+                         <label for="owner" class="cursor-pointer">Co-ownership</label>
+                    </div>
+                </div>
+                
+
+                <input class="w-full text-sm py-2 px-4 rounded-sm mb-2 mt-2 outline-none outline-transparent" type="text" name="" id="total" placeholder="Surface Totla:">
+                <input class="w-full text-sm py-2 px-4 rounded-sm mt-2 outline-none outline-transparent" type="text" name="" id="tax" placeholder="Property Tax:">
+                
+                <h5 class="text-sm text-white my-6 mb-6">Technical Details</h5>
+
+                <div class="simple-select w-full mb-4">
+                    <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                        <option value="">Counter ind. electrical</option>
+                        <option value="">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+                <div class="simple-select w-full mb-4">
+                    <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                        <option value="">IND heating meters:</option>
+                        <option value="">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+                <div class="simple-select w-full mb-4">
+                    <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                        <option value="">Counter ind. water:</option>
+                        <option value="">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+                <div class="simple-select simple-input mb-4">
+                    <input class=" w-full py-2 px-2 text-sm text-black" type="text" name="" id="" placeholder="Estimated amount of work">
+                </div>
+                <div class="simple-select w-full mb-4">
+                    <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                        <option value="">Possible batch creation:</option>
+                        <option value="">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+                <div class="simple-select w-full mb-4">
+                    <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                        <option value="">Diag. Compliant sanitaion:</option>
+                        <option value="">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+
+                <!-- Rental details -->
+                <h5 class="text-sm text-white my-6 mb-6">Rental Details</h5>
+
+                <div class="simple-select w-full mb-4">
+                    <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                        <option value="">Short-term rental:</option>
+                        <option value="">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+                <div class="simple-select w-full mb-4">
+                    <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                        <option value="">Furnished rental:</option>
+                        <option value="">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+                <div class="simple-select w-full mb-4">
+                    <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                        <option value="">Unpaid:</option>
+                        <option value="">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+                <div class="simple-select w-full mb-4">
+                    <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                        <option value="">GL (vision, insurance):</option>
+                        <option value="">All</option>
+                        <option value="">Partly</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+
+                <!-- Equipment -->
+                <h5 class="text-sm text-white my-6 mb-6">Equipment</h5>
+                <div class="simple-select w-full mb-4">
+                    <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                        <option value="">Elevator:</option>
+                        <option value="">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+                <div class="simple-select w-full mb-4">
+                    <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                        <option value="">Parking:</option>
+                        <option value="">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+                <div class="simple-select w-full mb-4">
+                    <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                        <option value="">Ext individual (garden, balcony):</option>
+                        <option value="">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+                <div class="simple-select w-full mb-4">
+                    <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                        <option value="">Suitable for people:</option>
+                        <option value="">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+                <div class="simple-input mb-4">
+                    <input type="text" placeholder="Reference" class="mb-4 w-full py-2 px-2">
+                </div>
+                <div class="simple-select w-full mb-4">
+                    <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                        <option value="">Intercabinet possible:</option>
+                        <option value="">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit" class="bg-primary hover:bg-secondary py-2 px-6 rounded-lg">GO</button>
+                </div>
+
+            </form>
+        </div>
+        <!-- form three end -->
+
+        <!-- Main thing for investor-->
+        <div class="max-w-2xl mx-auto bg-gray-700 p-16 mt-10">
+            <h3 class="text-center mb-6 text-3xl">The Main thing for an investor</h3>
+            <form>
+                <div class="flex flex-row space-x-2 justify-between bg-white p-2">
+                    <div class="border border-solid flex gap-2 capitalize font-medium text-black rounded-md ring-blue-400 p-1 ring-1 basis-1/4">
+                        <input type="checkbox" name="checkbox" id="residential" class="cursor-pointer">
+                        <label for="residential" class="text-black text-sm font-medium cursor-pointer">residential</label>
+                    </div>
+                    <div class="border border-solid flex gap-2 capitalize font-medium text-black p-1 rounded-md ring-blue-400 ring-1 basis-1/4">
+                        <input type="checkbox" name="checkbox" id="Pro" class="cursor-pointer">
+                        <label for="Pro" class="text-black text-sm font-medium cursor-pointer">Pro</label>
+                    </div>
+                    <div class="border border-solid flex gap-2 capitalize font-medium text-black p-1 rounded-md ring-blue-400 ring-1 basis-1/4">
+                        <input type="checkbox" name="checkbox" id="diviser" class="cursor-pointer">
+                        <label for="diviser" class="text-black text-sm font-medium cursor-pointer">Well to divide</label>
+                    </div>
+                </div>
+                
+                <div class="mb-6 mt-6">
+                    <input type="text" id="loction"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Localisation" required>
+                </div>
+                <div class="mb-6">
+                    <input type="text" id="ISp"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="ISP Selling Price" required>
+                </div>
+                <div class="mb-6">
+                    <input type="text" id="annual"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Annual rent Excluding Charges" required>
+                </div>
+                <div class="mb-6">
+                    <input type="text" id="yield"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Gross yield" required>
+                </div>
+                <div class="mb-6">
+                    <input type="text" id="lots"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Number of lots" required>
+                </div>
+
+                <div class="flex flex-row space-x-2 justify-stretch bg-white p-2 mb-6">
+                    <div class=" flex items-center gap-2 capitalize font-medium text-black p-2 rounded-md  basis-1/4">
+                        <img class="h-6 w-6" src="assets/images/repair.png" alt="">
+                    </div>
+                    <div class=" flex items-center gap-2 capitalize font-medium text-black p-2 rounded-md  basis-1/4">
+                        <input type="checkbox" name="checkbox" id="none" class="cursor-pointer">
+                        <label for="Mixte" class="text-black text-sm font-medium cursor-pointer">None</label>
+                    </div>
+                    <div class=" flex items-center gap-2 capitalize font-medium text-black p-2 rounded-md  basis-1/4">
+                        <input type="checkbox" name="checkbox" id="refresh" class="cursor-pointer">
+                        <label for="Pro" class="text-black text-sm font-medium cursor-pointer">Refresh</label>
+                    </div>
+                    <div class=" flex items-center gap-2 capitalize font-medium text-black p-2 rounded-md  basis-1/4">
+                        <input type="checkbox" name="checkbox" id="" class="cursor-pointer">
+                        <label for="diviser" class="text-black text-sm font-medium cursor-pointer">To renovate</label>
+                    </div>
+                </div>
+
+
+
+                <div class="flex flex-row space-x-2 justify-stretch bg-white p-2 mb-6">
+                    <div class=" flex gap-2 capitalize font-medium text-black p-2 rounded-md  basis-1/4">
+                        <img class="h-6 w-6" src="assets/images/repair.png" alt="">
+                    </div>
+                    <div class=" flex gap-2 capitalize font-medium text-black p-2 rounded-md  basis-1/4">
+                        <input type="checkbox" name="checkbox" id="" class="cursor-pointer">
+                        <label for="Mixte" class="text-black text-sm font-medium cursor-pointer">Rented</label>
+                    </div>
+                    <div class=" flex gap-2 capitalize font-medium text-black p-2 rounded-md  basis-1/4">
+                        <input type="checkbox" name="checkbox" id="" class="cursor-pointer">
+                        <label for="Pro" class="text-black text-sm font-medium cursor-pointer">Partly</label>
+                    </div>
+                    <div class=" flex gap-2 capitalize font-medium text-black p-2 rounded-md  basis-1/4">
+                        <input type="checkbox" name="checkbox" id="" class="cursor-pointer">
+                        <label for="diviser" class="text-black text-sm font-medium cursor-pointer">Empty</label>
+                    </div>
+                </div>
+                <div class="flex gap-6 mb-6">
+                    <div class="flex items-center">
+                        <input type="text" name="" id="" placeholder="Energy Class" class="py-2 px-2 w-full">
+                        <span class="flex items-center justify-center text-center h-8 w-9 bg-primary rounded-full cursor-pointer " title="This is input field">?</span>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="text" name="" id="" placeholder="GES" class="py-2 px-2 w-full">
+                        <span class="flex items-center justify-center text-center h-8 w-9 bg-primary rounded-full cursor-pointer " title="This is input field">?</span>
+                    </div>
+                    
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit" class="text-white bg-primary hover:bg-secondary focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-52">Continue</button>
+                </div>
             </form>
         </div>
 
+        <!-- next page content -->
 
+        <!-- next page content -->
+                <!-- Main thing for investor-->
+                <div class="max-w-2xl mx-auto bg-gray-700 p-16 mt-10">
+                    <h3 class="text-center mb-6 text-2xl">The information that makes the difference <br>
+                    (optional but essential for some investor)
+                    </h3>
+                    <form>
+                        <div class="flex justify-center gap-8 mb-6">
+                            <div class="checkbox flex gap-1 ">
+                                <input type="radio" id="sole" name="fav_language" value="CSS">
+                                 <label for="sole" class="cursor-pointer">Sole Propietorship </label>
+                            </div>
+                            <div class="checkbox flex gap-1  ">
+                                <input type="radio" id="owner" name="fav_language" value="JavaScript">
+                                 <label for="owner" class="cursor-pointer">Co-ownership</label>
+                            </div>
+                        </div>
+                        
         
+                        <input class="w-full text-sm py-2 px-4 rounded-sm mb-2 mt-2 outline-none outline-transparent" type="text" name="" id="total" placeholder="Total area:">
+                        <input class="w-full text-sm py-2 px-4 rounded-sm mt-2 outline-none outline-transparent" type="text" name="" id="tax" placeholder="Property Tax:">
+                        
+                        <h5 class="text-sm text-white my-6 mb-6">Technical Details</h5>
+        
+                        <div class="simple-select w-full mb-4">
+                            <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                                <option value="">Counter ind. electrical</option>
+                                <option value="">Yes</option>
+                                <option value="2">No</option>
+                            </select>
+                        </div>
+                        <div class="simple-select w-full mb-4">
+                            <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                                <option value="">IND heating meters:</option>
+                                <option value="">Yes</option>
+                                <option value="2">No</option>
+                            </select>
+                        </div>
+                        <div class="simple-select w-full mb-4">
+                            <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                                <option value="">Counter ind. water:</option>
+                                <option value="">Yes</option>
+                                <option value="2">No</option>
+                            </select>
+                        </div>
+                        <div class="simple-select simple-input mb-4">
+                            <input class=" w-full py-2 px-2 text-sm text-black" type="text" name="" id="" placeholder="Estimated amount of work">
+                        </div>
+                        <div class="simple-select w-full mb-4">
+                            <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                                <option value="">Possible batch creation:</option>
+                                <option value="">Yes</option>
+                                <option value="2">No</option>
+                            </select>
+                        </div>
+                        <div class="simple-select w-full mb-4">
+                            <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                                <option value="">Diag. Compliant sanitaion:</option>
+                                <option value="">Yes</option>
+                                <option value="2">No</option>
+                            </select>
+                        </div>
+        
+                        <!-- Rental details -->
+                        <h5 class="text-sm text-white my-6 mb-6">Rental Details</h5>
+        
+                        <div class="simple-select w-full mb-4">
+                            <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                                <option value="">Short-term rental:</option>
+                                <option value="">Yes</option>
+                                <option value="2">No</option>
+                            </select>
+                        </div>
+                        <div class="simple-select w-full mb-4">
+                            <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                                <option value="">Furnished rental:</option>
+                                <option value="">Yes</option>
+                                <option value="2">No</option>
+                            </select>
+                        </div>
+                        <div class="simple-select w-full mb-4">
+                            <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                                <option value="">Unpaid:</option>
+                                <option value="">Yes</option>
+                                <option value="2">No</option>
+                            </select>
+                        </div>
+                        <div class="simple-select w-full mb-4">
+                            <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                                <option value="">GL (vision, insurance):</option>
+                                <option value="">All</option>
+                                <option value="">Partly</option>
+                                <option value="2">No</option>
+                            </select>
+                        </div>
+                        <div class="simple-select w-full mb-4">
+                            <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                                <option value="">City permit to rent:</option>
+                                <option value="">Yes</option>
+                                <option value="2">No</option>
+                            </select>
+                        </div>
+                        <div class="simple-select w-full mb-4">
+                            <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                                <option value="">City rent cap:</option>
+                                <option value="">Yes</option>
+                                <option value="2">No</option>
+                            </select>
+                        </div>
+        
+                        <!-- Equipment -->
+                        <h5 class="text-sm text-white my-6 mb-6">Equipment</h5>
+                        <div class="simple-select w-full mb-4">
+                            <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                                <option value="">Elevator:</option>
+                                <option value="">Yes</option>
+                                <option value="2">No</option>
+                            </select>
+                        </div>
+                        <div class="simple-select w-full mb-4">
+                            <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                                <option value="">Parking:</option>
+                                <option value="">Yes</option>
+                                <option value="2">No</option>
+                            </select>
+                        </div>
+                        <div class="simple-select w-full mb-4">
+                            <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                                <option value="">Ext individual (garden, balcony):</option>
+                                <option value="">Yes</option>
+                                <option value="2">No</option>
+                            </select>
+                        </div>
+                        <div class="simple-select w-full mb-4">
+                            <select class="w-full py-2 px-2 text-sm text-slate-950" name="" id="counter" aria-placeholder="Counters ind electrical">
+                                <option value="">Suitable for people:</option>
+                                <option value="">Yes</option>
+                                <option value="2">No</option>
+                            </select>
+                        </div>
+                        <div class="simple-input mb-4">
+                            <input type="text" placeholder="Reference" class="w-full py-2 px-2 text-sm text-gray-700">
+                        </div>
+                        <div class="simple-select w-full mb-4">
+                            <select class="w-full py-2 px-2 text-sm text-gray-700" name="" id="counter" aria-placeholder="Counters ind electrical">
+                                <option value="">Intercabinet possible:</option>
+                                <option value="">Yes</option>
+                                <option value="2">No</option>
+                            </select>
+                        </div>
+
+                        <div class="">
+                            <h3 class="text-2xl text-white mb-4">Description and photos</h3>
+                            <textarea name="" placeholder="The type and number of surfaces, the neighborhood, the detail technical (roofing, facade, electricity, etc.), the quality of tenants (date of entry, type of lease, etc." id="" cols="30" rows="10" class="py-2 px-2 w-full text-gray-700 mb-4"></textarea>
+
+
+                            <input type="file" name="" id="img" placeholder="Upload Photos" class="hidden">
+                            <label for="img" class="flex cursor-pointer w-full py-2 px-2 bg-white text-gray-700 border mb-4">Click me to upload image</label>
+
+
+                            <input type="file" name="" id="video" placeholder="Upload Video" class="hidden">
+                            <label for="img" class="flex cursor-pointer w-full py-2 px-2 bg-white text-gray-700 border mb-4">Click me to upload Video</label>
+
+                            <h4 class="text-center text-2xl text-white font-medium mb-4">Contact Details</h4>
+                            
+                            <input type="phone" name="" id="" placeholder="Phone" class="w-full py-2 px-2 text-gray-700 mb-4">
+                            <input type="email" name="" id="" placeholder="Email" class="w-full py-2 px-2 text-gray-700 mb-4">
+
+                            <div class="flex gap-4 mb-6">
+                                <input type="checkbox" name="terms" id="terms">
+                                <label for="terms" class="text-sm">By validating the distribution of my ad, I accept the
+                                   <a href="#">general conditions of use and the rules of</a> 
+                                    distribution of the leboncoin website.freight I authorize leboncoin to
+                                    post my ad</label>
+                            </div>
+
+                        </div>
+                        <div class="flex justify-center">
+                            <button type="submit" class="bg-primary hover:bg-secondary py-2 px-6 rounded-lg">Publish the announcement</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Main thing for investor-->
+                <h1 class="text-7xl">for vendor</h1>
+
+
+                <!-- for vendor -->
+                <div class="max-w-2xl mx-auto bg-gray-700 p-16 mt-10">
+                    <h3 class="text-center mb-6 text-2xl">Quickly, the buyers of building are 
+                        <span class="text-1xl">waiting for your announcement</span>
+                    </h3>
+                    <form>
+                        I am: 
+                        <div class="flex justify-start gap-8 mb-6">
+                            <div class="checkbox flex gap-1 ">
+                                <input type="radio" id="agent" name="name" value="agent">
+                                 <label for="agent" class="cursor-pointer">Agent </label>
+                            </div>
+
+                            <div class="checkbox flex gap-1  ">
+                                <input type="radio" id="agent2" name="name" value="agent">
+                                 <label for="agent2" class="cursor-pointer">Co-ownership</label>
+                            </div>
+                            <div class="checkbox flex gap-1  ">
+                                <input type="radio" id="other" name="name" value="other">
+                                 <label for="other" class="cursor-pointer">other</label>
+                            </div>
+                        </div>
+                        
+                        <div class="simple-input">
+                            <input type="number" name="" id="" placeholder="N SIREN:" class="mb-4 w-full py-2 px-2 text-sm text-gray-700">
+                            <input type="text" name="" id="" placeholder="Company Name:" class="mb-4 w-full py-2 px-2 text-sm text-gray-700">
+                            <input type="text" name="" id="" placeholder="* First Name:" class="mb-4 w-full py-2 px-2 text-sm text-gray-700" required>
+                            <input type="text" name="" id="" placeholder="* Last Name:" class="mb-4 w-full py-2 px-2 text-sm text-gray-700" required>
+                            <input type="email" name="" id="" placeholder="* Email:" class="mb-4 w-full py-2 px-2 text-sm text-gray-700" required>
+                            <input type="text" name="" id="" placeholder="* Portable:" class="mb-4 w-full py-2 px-2 text-sm text-gray-700">
+                            <input type="text" name="" id="" placeholder="Fiexed:" class="mb-4 w-full py-2 px-2 text-sm text-gray-700">
+                            <input type="text" name="" id="" placeholder="Address:" class="mb-4 w-full py-2 px-2 text-sm text-gray-700">
+                            <input type="number" name="" id="" placeholder="T-card N:" class="mb-4 w-full py-2 px-2 text-sm text-gray-700">
+
+                            <input type="file" name="" id="img" placeholder="Upload Photos" class="hidden">
+                            <label for="img" class="flex cursor-pointer w-full py-2 px-2 bg-white text-gray-700 border mb-4">Click me to upload image</label>
+
+                            <input type="password" name="" id="" placeholder="password" class="w-full px-2 py-2 text-sm text-gray-700 mb-4">
+                            <input type="password" name="" id="" placeholder="Confirm password" class="w-full px-2 py-2 text-sm text-gray-700 mb-4">
+
+                            <div>
+                                <input type="checkbox" name="" id="accept">
+                                <label for="accept" class="cursor-pointer inline-block mb-4">I accept the Terms of Use, GTC</label>
+                            </div>
+                        </div>
+                        <div class="flex justify-center">
+                            <button type="submit" class="bg-primary hover:bg-secondary py-2 px-6 rounded-lg">Publish the announcement</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- for vendor -->
+
+
+        <!-- Main thing for investor-->
     </div>
-        
+
+    <style>
+        .simple-select select {
+            color: #000000ab;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- advance search form -->
- 
-
-
     <footer class="relative mt-48 bg-slate-900 dark:bg-slate-800">
         <div class="container">
             <div class="grid grid-cols-1">
